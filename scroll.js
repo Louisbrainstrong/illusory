@@ -21,7 +21,7 @@ $(document).ready(function()  {
      
         //AFFIX menu to top, after header height
         $('#nav').toggleClass('affix', $(this).scrollTop()>headerHeight); 
-    
+        //Add gap spacing to account for navbar height
         $('#nav-spacer-2').toggleClass('navheight',  $(this).scrollTop()>headerHeight);  
        
         //Change TREES image to absolute positioning, if past SHAPES
@@ -31,11 +31,9 @@ $(document).ready(function()  {
         
 
        // FADE #under header, containing text
-        var fadeStart=windowHeight/2
-        ,fadeUntil=windowHeight*0.8
-        ,fading = $('#under');
-       
-       
+        var fadeStart=windowHeight/2,
+            fadeUntil=windowHeight*0.8,
+            fading = $('#under');
        var offset = $(this).scrollTop(),opacity=1;
             if( offset<=fadeStart ){
                 opacity=0;
