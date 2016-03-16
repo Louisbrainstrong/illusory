@@ -1,32 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="OS4RwCo67r-Eqn92wNKqVdk336F68IpXrU_XgtHPeJk" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
     <meta name="author" content="Patrick Wilkie">
-    <meta name="keywords" content="Art, Poemotion, Illusion, Gil Scott Heron, Sanctuary, Dripsy Collective, Vancouver, Freiburg">
-    <!--My Script - Web Audio API-->
-    <script type='text/javascript' src="lines.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <link rel='stylesheet' type='text/css' href='papier-1.0.0.min.css'> 
-    <link rel='stylesheet' type='text/css' href='special.css'/>
+    <meta name="keywords" content="Design, Nabe, Vanouver, Art, Technology, Website, Mobile, Studio">
+      
+    <!-- SCROLLS -->
+    <!-- CSS -->  
+    <link rel="stylesheet" href="public/libs/bootstrap/dist/css/bootstrap.min.css"> 
+    <link rel='stylesheet' type='text/css' href='main.css'/>
+      
+    <!-- SPELLS -->
+    <!-- JS -->
+    
+    <script type='text/javascript' src="public/libs/jquery/dist/jquery.min.js"></script>
+    <script type='text/javascript' src="scroll.js"></script>
   </head>
     
-  <body>
-      <header id="dreams" class="bg-cyan top-bar center l-padding col-md-12">
-      All the <strong>dreams</strong> that you show up in
-          <strong>aren't your own.</strong> - <italics>Gil Scott Heron</italics>
+  <body class="text-center">
+      
+        <!-- HEADER -->
+      <header>
+        <div>
+            <img id="trees" src="images/NaBE_Trees_cropped-01.png" class="topbanana text-center fullpane">
+        </div>
+        <div>
+            <img id="under" src="images/NaBE_Header_under-01.jpg" class="topbanana center fullpane">
+        </div>
+        <div>
+            <img src="images/NaBE_HeaderLogo-01.png" class="logo" id="logo">
+        </div>
+        <div class="curtain2">
+            <div class="shapes2"></div>
+        </div>
+        <div id="nav-spacer" class="headheight"></div>  
       </header>
-      <main>
-          <section id="bounce" class="center">
-            <div id="illusion"><img src="images/SpinningBoxes.png" class="center" width=100% height=3051.3333></div>
-            <div id="blackline"><img SRC="images/12pxForegroundTester.png" width=100% height=850></div>
-          </section>
-      </main>
-      <footer id="bot" class="l-padding center col-md-12">
-        <small>Copyright Patrick Wilkie, September 2015. Freiburg DE.</small>
-      </footer>
-      <span id="autoConvertInstalled"></span>
-  </body>
+      
+      <!-- NAVBAR -->
+      <div class="container-fluid touch">
+          <div class="navbar navbar-collapse" role="navigation" id="nav">
+            <ul class="nav navbar-nav text-center">
+                <li class="active"><a href="#services">SERVICES</a></li>
+                <!--li><a href="#process">PROCESS</a></li-->
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="nav-spacer-2"></div>  
+        <div id="services" class="gray row" >
+            <h4 class="title text-upper">SERVICES</h4>
+            <div class="text-left col-sm-3"></div>
+            <div class="container text-left col-sm-8">
+                <div class="text-left col-sm-4">
+                    <ul class="service-list">
+                        <li class="list-title">BRANDING</li>
+                        <li>Brand Collateral</li>
+                        <li>Brand Creation</li>
+                        <li>Logo Development</li>
+                        <li>Brand Analysis</li>
+                        <li>Brand Positioning</li>
+                        <li>Brand Consulting</li>
+                    </ul>
+                    <ul class="service-list">
+                        <li class="list-title">PRINT & IMAGERY</li>
+                        <li>Product & Packaging Design</li>
+                        <li>Signage & Billboard Design</li>
+                        <li>Apparel Design</li>
+                        <li>Brochure & Menu Design</li>
+                        <li>Business Card Design</li>
+                        <li>Letterhead & Envelope Design</li>
+                        <li>Print Consulting & Direction</li>
+                        <li>Illustration</li>
+                        <li>Hand Lettering</li>
+                        <li>Photography</li>
+                        <li>Video Production</li>
+                    </ul>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="text-left col-sm-6">
+                    <ul class="service-list">
+                        <li class="list-title">WEB & DIGITAL</li>
+                        <li>User Experience Design</li>
+                        <li>Website Design & Development</li>
+                        <li>E-commerce Design & Development</li>
+                        <li>iOS App Design & Development</li>
+                        <li>Support & Hosting</li>
+                        <li>Email Marketing</li>
+                        <li>Email Design & Development</li>
+                        <li>Analytics Tracking & Reporting</li>
+                        <li>SEO Optimization</li>
+                        <li>Local Search Set-up</li>
+                        <li>Facebook Marketing</li>
+                    </ul>
+                    <ul class="service-list">
+                        <li class="list-title">STRATEGY</li>
+                        <li>Brand Launch Strategy</li>
+                        <li>Digital Strategy</li>
+                        <li>Social Strategy</li>
+                        <li>Social Media Maintenance</li>
+                        <li>Tastemaker & Blogger Outreach</li>
+                        <li>Content Creation</li>
+                        <li>Copywriting</li>
+                        <li>Website Copywriting & Editing</li>
+                        <li>Press Releases</li>
+                        <li>Product & Company Descriptions</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          
+          <div id="team" class="row">
+              <h4 class="title">TEAM</h4>
+            <div class="col-sm-2"></div>
+            <div class="container col-sm-8 no-gutter">
+                  <div class="col-sm-4"><img src="images/NaBE_TEAM_CM-01.jpg" class="team-image"></div>
+                  <div class="col-sm-4"><img src="images/NaBE_TEAM_MC-01.jpg" class="team-image"></div>
+                  <div class="col-sm-4"><img src="images/NaBE_TEAM_KS-01.jpg" class="team-image"></div>
+                  <div class="col-sm-4"><img src="images/NaBE_TEAM_YOU-01.jpg" class="team-image"></div>
+                  <div class="col-sm-4"><img src="images/NaBE_TEAM_PW-01.jpg" class="team-image"></div>
+                  <div class="col-sm-4"><img src="images/NaBE_TEAM_TT-01.jpg" class="team-image"></div>
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
+          
+            <div id="blog" class="gray title" style="background-image: url(images/NaBE_BLOG-01.png); background-size:cover;">
+                <h4 class="title">BLOG</h4>
+                <div id="blog-text">
+                    <p>If you are looking for</p>
+                    <p>design or development work,</p>
+                    <p>please email <a href="mailto:kiera@nabedesign.com">kiera@nabedesign.com</a></p>
+                </div>
+            </div>    
+                
+            <div id="contact" class="row title fullpane" style="background-image: url(images/NaBE_CONTACT_map-01.jpg); background-size:cover;">
+                <div style="height: 26vh;"></div>
+                <div class="title logo-wrapper" id="contact-card">
+                        <a href="mailto:info@nabedesign.com">info@nabedesign.com</a>
+                        <p id="phone">778.875.5069</p>
+                </div>
+          </div>
+                
+        <footer id="footer" class="row">
+            <p>®NaBE Design. All rights reserved.</p>
+        </footer>
+    </div> 
+    
+      <!-- website design by plwilkie@gmail.com via NaBE DESIGN -->   
+    
+    </body> 
 </html>

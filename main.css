@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'lora'; 
+    src: url('public/fonts/lora/Lora-Regular.ttf');
+}
+@font-face {
+    font-family: 'lora-bold';
+    src: url('public/fonts/lora/Lora-Bold.ttf');
+}
+@font-face {
+    font-family: 'lora-italic';
+    src: url('public/fonts/lora/Lora-Italic.ttf');
+}
+@font-face {
+    font-family: 'lora-bolditalic';
+    src: url('public/fonts/lora/Lora-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat-black';
+    src: url('public/fonts/montserrat/Montserrat-Black.otf');
+}
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('public/fonts/montserrat/Montserrat-Bold.otf');
+}
+@font-face {
+    font-family: 'montserrat-extrabold';
+    src: url('public/fonts/montserrat/Montserrat-ExtraBold.otf');
+}
+@font-face {
+    font-family: 'montserrat-light';
+    src: url('public/fonts/montserrat/Montserrat-Light.otf');
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('public/fonts/montserrat/Montserrat-Regular.otf');
+}
+@font-face {
+    font-family: 'montserrat-hairline';
+    src: url('public/fonts/montserrat/Montserrat-Hairline.otf');
+}
+@font-face {
+    font-family: 'montserrat-semibold';
+    src: url('public/fonts/montserrat/Montserrat-Semiold.otf');
+}
+@font-face {
+    font-family: 'montserrat-ultralight';
+    src: url('public/fonts/montserrat/Montserrat-UltraLight.otf');
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+@media (max-width: 797px) {
+    body { 
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+html, body {
+    font-family: 'montserrat-ultralight';
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+
+body {
+    background-color: white;
+}
+
+h4 {
+    font-family: 'montserrat-ultralight';
+}
+
+p {
+    font-family: 'lora-bold';
+}
+
+a {
+    color: #ebbc1d;
+    font-family: "lora";
+}
+
+a:hover {
+    color: #ebbc1d;
+    font-family: "lora-bold";
+}
+
+
+/****** Starting with Top ******/
+.logo {
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    left: 35vw;
+    top: 37vh;
+    z-index:2;
+    background-color:transparent;
+}
+
+.curtain2 {
+    border-left: solid #fff 0vw;
+    border-right: solid #fff 0vw;
+    border-bottom: solid #fff 2vw;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.shapes2 {
+    background-image: url("images/NaBE_SHAPE_v2-01.png");
+    background-repeat: repeat;
+    /* want some overhang to avoid rounding gaps */
+    width: 100vw;
+    height: 100vh;
+    background-size: 10%;
+}
+
+.curtain {
+    border-left: solid #eebc1d 1vw;
+    border-right: solid #eebc1d 1vw;
+    border-bottom: solid #eebc1d 2vw;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.shapes {
+    background-image: url("images/NaBE_SHAPE_v1-01.png");
+    background-repeat: repeat;
+    /* want some overhang to avoid rounding gaps */
+    width: 99vw;
+    height: 100vh;
+    background-size: 10%;
+}
+
+.fullpane {
+    width: 100vw;
+    height: 100vh;
+}
+
+#trees {
+    left: 0vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+#under {
+    left: 0vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero {
+    top: 0vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.ontop {
+    top: 100vh;
+    position: absolute;
+}
+
+.zero {
+    top: 100vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.headheight {
+    height: 100vh;
+}
+
+.navheight {
+    top: 200vh;
+    height: 10vh;
+}
+
+/******** NAV **********/
+.affix {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.92);
+    
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.nav.navbar-nav > li > a {
+    color: black;
+    font-family: "montserrat-ultralight";
+    border-bottom: solid transparent 3px;  
+}
+
+.nav.navbar-nav > li > a:hover, .nav.navbar-nav > li > a:focus  {
+    background-color: transparent;
+    color: #ebbc1d;
+    border-bottom: 3px solid #ebbc1d;
+    font-family: "montserrat";
+}
+
+.title {
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
+.gray {
+    background-color: #e6e7e8;
+}
+
+/******** SERVICES **********/
+
+.service-list
+{
+    list-style-type: none;
+    padding-bottom: 5vh;
+}
+.service-list > li {
+    font-family: "lora";
+    font-size: 80%;
+}
+.list-title {
+    font-family: "montserrat-ultralight";
+    font-size: 100%;
+}
+
+/******** TEAM **********/
+.team-image {
+    width: 100%;
+    height: auto;
+}
+
+.team-image:hover {
+}
+
+.no-gutter [class*="-4"] {
+	padding-left:0;
+    padding-right:0;
+}
+
+#team > .container {
+    padding-bottom: 14vh;
+}
+
+/******** BLOG **********/
+#blog {
+    width: auto;
+    height: 78vh;
+}
+
+#blog > .title {
+    padding-top: 10vh;
+}
+
+#blog-text, #blog-text > p >  a  {
+    padding-top: 15vh;
+    color: black;
+}
+
+#contact {
+    width: auto;
+    height: 83vh;
+    color: white;
+}
+
+#contact-card > a {
+    color: white;
+}
+
+#contact-card {
+    font-family: 'lora';
+    color: white;
+    background-color: rgba(0,0,0,0.78);
+    width: 30%;
+    display: inline-block;
+    float: none;
+}
+
+#footer {
+    background-color: #3a3b3c;
+    color: white;
+    font-family: "lora";
+}
